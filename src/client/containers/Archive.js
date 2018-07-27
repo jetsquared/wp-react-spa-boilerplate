@@ -6,7 +6,7 @@ import PostsList from '../components/PostsList'
 import Loader from '../components/Loader'
 
 class Archive extends Component {
-  componentWillMount () {
+  componentDidMount () {
     const {
       getArchive,
       pageNum = 1,

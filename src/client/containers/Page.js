@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {getPage} from '../actions'
 import { WP_SITE_TITLE } from '../constants'
@@ -6,7 +6,7 @@ import Post from '../components/Post'
 import Loader from '../components/Loader'
 
 class Page extends Component {
-  componentWillMount () {
+  componentDidMount () {
     const {
       getPage,
       route

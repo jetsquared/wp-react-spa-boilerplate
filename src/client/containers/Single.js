@@ -6,7 +6,7 @@ import Post from '../components/Post'
 import Loader from '../components/Loader'
 
 class Single extends Component {
-  componentWillMount () {
+  componentDidMount () {
     const {
       getSingle,
       params
@@ -24,7 +24,7 @@ class Single extends Component {
 
     return (
       <div>
-        { loading ? <Loader /> : <Post {...this.props} /> }
+        {loading ? <Loader /> : <Post {...this.props} />}
       </div>
     )
   }

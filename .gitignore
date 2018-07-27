@@ -6,10 +6,12 @@ node_modules
 .ansible
 .vagrant
 ansible.cfg
-Movefile
+Movefile*
 provision
 Vagrantfile
 wp-cli.yml
+
+package-lock.json
 
 # WordPress
 wordpress/.*
@@ -26,3 +28,4 @@ wordpress/wp-content/upgrade
 wordpress/wp-content/uploads
 wordpress/wp-content/plugins
 wordpress/wp-content/themes
+wp-cli/*

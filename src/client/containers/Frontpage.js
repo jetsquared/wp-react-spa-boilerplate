@@ -6,7 +6,7 @@ import Post from '../components/Post'
 import Loader from '../components/Loader'
 
 class Frontpage extends Component {
-  componentWillMount () {
+  componentDidMount () {
     const { getFrontpage } = this.props
 
     getFrontpage()

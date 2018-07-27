@@ -1,12 +1,13 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { browserHistory } from 'react-router'
-import { syncHistoryWithStore } from 'react-router-redux'
-import { AppContainer } from 'react-hot-loader'
-import rootReducer from './reducers'
-import configureStore from './store/configureStore'
-import Routes from './Routes'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
+import { AppContainer } from 'react-hot-loader';
+import rootReducer from './reducers';
+import configureStore from './store/configureStore';
+import Routes from './Routes';
 
 const store = configureStore(rootReducer)
 const history = syncHistoryWithStore(browserHistory, store)
